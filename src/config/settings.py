@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # apps
     'apps.realty.apps.RealtyConfig',
+    'apps.developers.apps.DevelopersConfig',
     'django_extensions',
     'django_migration_vis',
 ]
