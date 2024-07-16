@@ -1,0 +1,45 @@
+// captions for the picture
+digraph {
+	"admin/0001_initial" [label="admin/0001_initial"]
+	"admin/0002_logentry_remove_auto_add" [label="admin/0002_logentry_remove_auto_add"]
+	"admin/0003_logentry_add_action_flag_choices" [label="admin/0003_logentry_add_action_flag_choices"]
+	"auth/0001_initial" [label="auth/0001_initial"]
+	"auth/0002_alter_permission_name_max_length" [label="auth/0002_alter_permission_name_max_length"]
+	"auth/0003_alter_user_email_max_length" [label="auth/0003_alter_user_email_max_length"]
+	"auth/0004_alter_user_username_opts" [label="auth/0004_alter_user_username_opts"]
+	"auth/0005_alter_user_last_login_null" [label="auth/0005_alter_user_last_login_null"]
+	"auth/0006_require_contenttypes_0002" [label="auth/0006_require_contenttypes_0002"]
+	"auth/0007_alter_validators_add_error_messages" [label="auth/0007_alter_validators_add_error_messages"]
+	"auth/0008_alter_user_username_max_length" [label="auth/0008_alter_user_username_max_length"]
+	"auth/0009_alter_user_last_name_max_length" [label="auth/0009_alter_user_last_name_max_length"]
+	"auth/0010_alter_group_name_max_length" [label="auth/0010_alter_group_name_max_length"]
+	"auth/0011_update_proxy_permissions" [label="auth/0011_update_proxy_permissions"]
+	"auth/0012_alter_user_first_name_max_length" [label="auth/0012_alter_user_first_name_max_length"]
+	"contenttypes/0001_initial" [label="contenttypes/0001_initial"]
+	"contenttypes/0002_remove_content_type_name" [label="contenttypes/0002_remove_content_type_name"]
+	"developers/0001_initial" [label="developers/0001_initial"]
+	"realty/0001_initial" [label="realty/0001_initial"]
+	"realty/0002_flat_developer" [label="realty/0002_flat_developer"]
+	"sessions/0001_initial" [label="sessions/0001_initial"]
+	"admin/0001_initial" -> "auth/0001_initial"
+	"admin/0001_initial" -> "contenttypes/0001_initial"
+	"admin/0002_logentry_remove_auto_add" -> "admin/0001_initial"
+	"admin/0003_logentry_add_action_flag_choices" -> "admin/0002_logentry_remove_auto_add"
+	"auth/0001_initial" -> "contenttypes/0001_initial"
+	"auth/0002_alter_permission_name_max_length" -> "auth/0001_initial"
+	"auth/0003_alter_user_email_max_length" -> "auth/0002_alter_permission_name_max_length"
+	"auth/0004_alter_user_username_opts" -> "auth/0003_alter_user_email_max_length"
+	"auth/0005_alter_user_last_login_null" -> "auth/0004_alter_user_username_opts"
+	"auth/0006_require_contenttypes_0002" -> "auth/0005_alter_user_last_login_null"
+	"auth/0006_require_contenttypes_0002" -> "contenttypes/0002_remove_content_type_name"
+	"auth/0007_alter_validators_add_error_messages" -> "auth/0006_require_contenttypes_0002"
+	"auth/0008_alter_user_username_max_length" -> "auth/0007_alter_validators_add_error_messages"
+	"auth/0009_alter_user_last_name_max_length" -> "auth/0008_alter_user_username_max_length"
+	"auth/0010_alter_group_name_max_length" -> "auth/0009_alter_user_last_name_max_length"
+	"auth/0011_update_proxy_permissions" -> "auth/0010_alter_group_name_max_length"
+	"auth/0011_update_proxy_permissions" -> "contenttypes/0002_remove_content_type_name"
+	"auth/0012_alter_user_first_name_max_length" -> "auth/0011_update_proxy_permissions"
+	"contenttypes/0002_remove_content_type_name" -> "contenttypes/0001_initial"
+	"realty/0002_flat_developer" -> "developers/0001_initial"
+	"realty/0002_flat_developer" -> "realty/0001_initial"
+}
